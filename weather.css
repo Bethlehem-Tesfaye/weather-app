@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(54, 51, 51);
+    /* overflow: hidden; */
+}
+.container{
+    width: 32%;
+    height: 550px;
+    margin: 70px auto;
+    background:linear-gradient(135deg, rgb(25, 209, 181), rgb(91, 199, 205), rgb(123, 104, 139));
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+                 /* -------SEARCH DIV ----------*/
+.container .search{
+    display: flex;
+}
+.container .search input{
+    width: 300px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+}
+.container .search .searchicon{
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+.container .search .searchicon i{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+                 /* -------SKY DIV ----------*/
+.container .sky{ 
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+}
+.container .sky img{
+    width:180px;
+    height:180px;
+}
+
+
+                 /* -------TEMPRETURE and city DIV ----------*/
+.container .tempandcity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container .tempandcity .temp{
+    font-size: 75px;
+    font-weight:bold;
+    font-family: Helvetica, sans-serif;
+}
+.container .tempandcity .city{
+    font-size: 40px;
+}
+
+
+                 /* -------HUMIDITY and WIND DIV ----------*/
+                
+.humi-and-wind {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+.humi-and-wind .humidity, .humi-and-wind .wind {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.humi-and-wind .humidity img, .humi-and-wind .wind img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.humi-and-wind .humidity .humidity-percent, .humi-and-wind .wind .wind-speed {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.humi-and-wind .humidity h3, .humi-and-wind .wind h3 {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+@media(max-width:1030px){
+    .container{
+        width: 40%;}
+        
+}
+@media(max-width:800px){
+    .container{
+        width: 45%;}
+        
+}
+@media(max-width:716px){
+    .container{
+        width: 50%;}
+        
+}
+@media(max-width:640px){
+    .container{
+        width: 55%;}
+        
+}
+@media(max-width:585px){
+    .container{
+        width:60%;}
+        
+}
+@media(max-width:540px){
+    .container{
+        width:70%;}
+        
+}
+@media(max-width:465px){
+    .container{
+        width:80%;}
+        
+}
+@media(max-width:410px){
+    .container{
+        width:90%;}
+        
+}
+@media(max-width:370px){
+    .container{
+        width:100%;}
+        
+}
+     
